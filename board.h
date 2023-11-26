@@ -1,12 +1,12 @@
-#pragma once
 
-#include <stdio.h>
-#include <stdlib.h>
+#define BOARDSTATUS_OK       1
+#define BOARDSTATUS_NOK      0
 
+int board_initboard(void);
+int board_printBoardStatus(void);
 
-void board_initBoard();
-void board_printBoardStatus();
-int  board_getBoardCoin();
-void board_getSharkPosition();
-void board_stepShark();
-void board_getBoardStatus();
+int board_getBoardStatus(int pos);
+int board_getBoardCoin(int pos);
+
+//int board_getSharkPosition(void);
+int board_stepShark(void);
